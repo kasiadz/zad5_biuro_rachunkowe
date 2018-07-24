@@ -1,0 +1,49 @@
+.sprites_media {
+    //position: absolute;
+    background: url(../img/sprites_spolecznosciowe.png) no-repeat;
+    width: 43px;
+    height: 42px;
+    /* overflow - przepełnienie  - znacznik bezpieczenstwa - obraz nie wyjdzie poza zakres - ukrywa reszte obrazu*/
+    overflow: hidden;
+    /* wyswietlanie wartosci obok siebie  - zeby obrazki nie były jeden pod drugim*/
+    display: inline-block;
+}
+
+/* klasa fb w divie */
+div.facebook {
+    background-position: 0px -1px;
+    /* czas przesuwania */
+    transition: all .25s linear;
+}
+
+div.facebook:hover{
+    /* podciagamy w gore */
+    background-position: 0px -43px;
+}
+
+div.twitter{
+    background-position: -52px -1px;
+    transition: all .25s linear;
+}
+
+div.twitter:hover{
+    background-position: -52px -43px;
+}
+
+div.youtube{
+    background-position: -104px -1px;
+    transition: all .25s linear;
+}
+
+div.youtube:hover{
+    background-position: -104px -43px;
+}
+
+div.in{
+    background-position: -156px -1px;
+    transition: all .25s linear;
+}
+
+div.in:hover{
+    background-position: -156px -43px;
+}

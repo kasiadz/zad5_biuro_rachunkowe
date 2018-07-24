@@ -1,0 +1,93 @@
+main {
+    //position: relative;
+    padding:2rem 20%;
+    //border: solid red 1rem;
+    
+    i.material-icons {
+        font-size: 7.2rem;
+        color: $icon-color;
+        text-align: center;
+    }
+
+    div.container{
+        width: 100%;
+        float: left;
+        justify-content: space-between;
+        padding: 2rem 0;
+        //border: .2rem rgb(233, 179, 33) solid;
+
+        div.section1 {
+            width: 32%;
+            padding: 1rem;
+            border-radius: .5rem;
+            background-color: $section-background;
+            text-align: justify;
+            //border: .2rem red solid;
+
+            &:hover {
+                box-shadow: 0 0 10px $shadow-color;
+            }
+
+        }
+
+        div.section2 {
+            width: 49%;
+            padding: 1rem;
+            border-radius: .5rem;
+            background-color: $section-background;
+            text-align: justify;
+            //border: .2rem green solid;
+
+            &:hover {
+                box-shadow: 0 0 10px $shadow-color;
+            }
+        }
+        
+        div.section3 {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: $section-background;
+            text-align: justify;
+            //border: .2rem blue solid;
+
+            &:hover {
+                box-shadow: 0 0 10px $shadow-color;
+            }
+
+        }
+
+        &:nth-child(1) {
+            border-bottom: $separator-color dotted;
+        }
+
+        &:nth-child(2) {
+            border-bottom: $separator-color dotted;
+        }
+    }
+
+}
+
+h3 {
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+#content {
+    height: 6rem;
+    width: 19rem;
+    top: 50vh;
+    padding: .9rem .2rem;
+    position: fixed;
+    z-index: 1;
+    left: -14rem;
+    border-radius: 1rem;
+    border-left: none;
+    transition: all 1s linear;
+    background-color: $section-background;
+    
+}
+
+#content:hover {
+    left:0rem;
+}

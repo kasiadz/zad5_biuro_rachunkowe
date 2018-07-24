@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem; }
+
+header {
+  color: #000; }
+  header h1 div {
+    position: relative;
+    width: 30%;
+    left: 50%;
+    padding: 2rem;
+    transform: translate(-50%);
+    font-size: 3rem;
+    font-weight: 700; }
+  header nav {
+    position: sticky;
+    top: 0;
+    padding: 1rem 25%;
+    z-index: 1;
+    width: 100%;
+    font-size: 1.68rem;
+    background-color: #fff; }
+    header nav ul {
+      display: flex;
+      justify-content: space-evenly; }
+      header nav ul a {
+        position: relative;
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        color: #000; }
+        header nav ul a::before {
+          content: '';
+          display: block;
+          height: .1rem;
+          width: 0%;
+          background-color: #864949;
+          transition: all 1s linear; }
+        header nav ul a:hover::before {
+          width: 100%; }
+        header nav ul a:hover {
+          color: darkgray; }
+
+#baner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url("../img/slider1.jpg") center/cover no-repeat; }
+  #baner div.apla {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 60%;
+    background-color: rgba(240, 240, 240, 0.75); }
+    #baner div.apla div {
+      position: absolute;
+      padding: 2rem;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: justify; }
+    #baner div.apla h2 {
+      font-size: 1.68rem;
+      font-weight: 700;
+      margin: 1rem 0; }
+
+.sprites_media {
+  background: url(../img/sprites_spolecznosciowe.png) no-repeat;
+  width: 43px;
+  height: 42px;
+  /* overflow - przepe┼énienie  - znacznik bezpieczenstwa - obraz nie wyjdzie poza zakres - ukrywa reszte obrazu*/
+  overflow: hidden;
+  /* wyswietlanie wartosci obok siebie  - zeby obrazki nie by┼éy jeden pod drugim*/
+  display: inline-block; }
+
+/* klasa fb w divie */
+div.facebook {
+  background-position: 0px -1px;
+  /* czas przesuwania */
+  transition: all .25s linear; }
+
+div.facebook:hover {
+  /* podciagamy w gore */
+  background-position: 0px -43px; }
+
+div.twitter {
+  background-position: -52px -1px;
+  transition: all .25s linear; }
+
+div.twitter:hover {
+  background-position: -52px -43px; }
+
+div.youtube {
+  background-position: -104px -1px;
+  transition: all .25s linear; }
+
+div.youtube:hover {
+  background-position: -104px -43px; }
+
+div.in {
+  background-position: -156px -1px;
+  transition: all .25s linear; }
+
+div.in:hover {
+  background-position: -156px -43px; }
+
+main {
+  position: relative;
+  padding: 2rem 20%; }
+  main i.material-icons {
+    font-size: 7.2rem;
+    color: #864949;
+    text-align: center; }
+  main div.container {
+    width: 100%;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    padding: 2rem 0; }
+    main div.container div.section1 {
+      width: 32%;
+      padding: 1rem;
+      border-radius: .5rem;
+      background-color: #f7f7f7;
+      text-align: justify; }
+      main div.container div.section1:hover {
+        box-shadow: 0 0 10px #864949; }
+    main div.container div.section2 {
+      width: 49%;
+      padding: 1rem;
+      border-radius: .5rem;
+      background-color: #f7f7f7;
+      text-align: justify; }
+      main div.container div.section2:hover {
+        box-shadow: 0 0 10px #864949; }
+    main div.container div.section3 {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 1rem;
+      background-color: #f7f7f7;
+      text-align: justify; }
+      main div.container div.section3:hover {
+        box-shadow: 0 0 10px #864949; }
+    main div.container:nth-child(1) {
+      border-bottom: #864949 dotted; }
+    main div.container:nth-child(2) {
+      border-bottom: #864949 dotted; }
+
+h3 {
+  margin: 1rem 0;
+  font-weight: 700; }
+
+#content {
+  height: 6rem;
+  width: 19rem;
+  top: 50vh;
+  padding: .9rem .2rem;
+  position: fixed;
+  z-index: 1;
+  left: -14rem;
+  border-radius: 1rem;
+  border-left: none;
+  transition: all 1s linear;
+  background-color: #f7f7f7; }
+
+#content:hover {
+  left: 0rem; }
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  padding: 1rem 20%;
+  background-color: #f7f7f7; }
+  footer p {
+    position: absolute; }
+
+/*# sourceMappingURL=style.css.map */

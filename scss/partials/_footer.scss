@@ -1,0 +1,13 @@
+footer {
+    //position: relative;
+    width: 100%;
+    height: 20vh;
+    //margin-top: 2rem;
+    padding: 1rem 20%;
+    background-color: $footer-background;
+    //border: .2rem rgb(233, 179, 33) solid;
+    
+    p {
+        position: absolute;
+    }
+}
