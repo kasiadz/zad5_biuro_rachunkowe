@@ -161,7 +161,6 @@ div.in:hover {
   background-position: -156px -43px; }
 
 main {
-  position: relative;
   padding: 2rem 20%; }
   main i.material-icons {
     font-size: 7.2rem;
@@ -169,20 +168,23 @@ main {
     text-align: center; }
   main div.container {
     width: 100%;
-    display: flex;
     float: left;
     justify-content: space-between;
     padding: 2rem 0; }
     main div.container div.section1 {
-      width: 32%;
+      float: left;
+      width: 31.1%;
       padding: 1rem;
+      margin: 1rem;
       border-radius: .5rem;
       background-color: #f7f7f7;
       text-align: justify; }
       main div.container div.section1:hover {
         box-shadow: 0 0 10px #864949; }
     main div.container div.section2 {
-      width: 49%;
+      float: left;
+      width: 48%;
+      margin: 1%;
       padding: 1rem;
       border-radius: .5rem;
       background-color: #f7f7f7;
@@ -207,7 +209,7 @@ h3 {
   font-weight: 700; }
 
 #content {
-  height: 6rem;
+  height: 10rem;
   width: 19rem;
   top: 50vh;
   padding: .9rem .2rem;
@@ -223,7 +225,6 @@ h3 {
   left: 0rem; }
 
 footer {
-  position: relative;
   width: 100%;
   height: 20vh;
   padding: 1rem 20%;

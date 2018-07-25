@@ -17,8 +17,10 @@ main {
         //border: .2rem rgb(233, 179, 33) solid;
 
         div.section1 {
-            width: 32%;
+            float: left;
+            width: 31.1%;
             padding: 1rem;
+            margin: 1rem;
             border-radius: .5rem;
             background-color: $section-background;
             text-align: justify;
@@ -27,11 +29,12 @@ main {
             &:hover {
                 box-shadow: 0 0 10px $shadow-color;
             }
-
         }
 
         div.section2 {
-            width: 49%;
+            float: left;
+            width: 48%;
+            margin: 1%;
             padding: 1rem;
             border-radius: .5rem;
             background-color: $section-background;
@@ -54,7 +57,6 @@ main {
             &:hover {
                 box-shadow: 0 0 10px $shadow-color;
             }
-
         }
 
         &:nth-child(1) {
@@ -74,7 +76,7 @@ h3 {
 }
 
 #content {
-    height: 6rem;
+    height: 10rem;
     width: 19rem;
     top: 50vh;
     padding: .9rem .2rem;
@@ -85,7 +87,6 @@ h3 {
     border-left: none;
     transition: all 1s linear;
     background-color: $section-background;
-    
 }
 
 #content:hover {
