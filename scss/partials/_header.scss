@@ -15,12 +15,10 @@ header {
     }
 
     nav {
-        // czemu sticky nie działa?!
         position: sticky;
         top: 0;
         padding: 1rem 25%;
         z-index: 1;
-        // border: red 2px solid;
         width: 100%;
         //left: 50%;
         //transform: translate(-50%);
@@ -36,7 +34,6 @@ header {
                 position: relative;
                 display: block;
                 padding: 1rem;
-                // border: blue 2px solid;
                 text-decoration: none;
                 color: $text-link-color;
             
@@ -46,7 +43,7 @@ header {
                     height: .1rem;
                     width: 0%;
                     background-color: $menu-line-color;
-                    transition: all 1s linear;
+                    transition: all .4s linear;
                 }
 
                 &:hover::before {

@@ -1,7 +1,5 @@
 main {
-    //position: relative;
     padding:2rem 20%;
-    //border: solid red 1rem;
     
     i.material-icons {
         font-size: 7.2rem;
@@ -14,9 +12,8 @@ main {
         float: left;
         justify-content: space-between;
         padding: 2rem 0;
-        //border: .2rem rgb(233, 179, 33) solid;
 
-        div.section1 {
+        section.s1 {
             float: left;
             width: 31.1%;
             padding: 1rem;
@@ -24,14 +21,17 @@ main {
             border-radius: .5rem;
             background-color: $section-background;
             text-align: justify;
-            //border: .2rem red solid;
+          
+            h3 {
+                text-align: center;
+            }
 
             &:hover {
                 box-shadow: 0 0 10px $shadow-color;
             }
         }
 
-        div.section2 {
+        section.s2 {
             float: left;
             width: 48%;
             margin: 1%;
@@ -39,24 +39,25 @@ main {
             border-radius: .5rem;
             background-color: $section-background;
             text-align: justify;
-            //border: .2rem green solid;
+            h3 {
+                text-align: center;
+            }
 
             &:hover {
                 box-shadow: 0 0 10px $shadow-color;
             }
         }
         
-        div.section3 {
+        section.s3 {
             width: 100%;
             padding: 1rem;
             border-radius: 1rem;
-            background-color: $section-background;
+            //background-color: $section-background;
             text-align: justify;
-            //border: .2rem blue solid;
-
-            &:hover {
-                box-shadow: 0 0 10px $shadow-color;
-            }
+           
+            // &:hover {
+            //     box-shadow: 0 0 10px $shadow-color;
+            // }
         }
 
         &:nth-child(1) {
@@ -68,6 +69,12 @@ main {
         }
     }
 
+}
+
+i {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 h3 {

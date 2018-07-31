@@ -90,7 +90,7 @@ header {
           height: .1rem;
           width: 0%;
           background-color: #864949;
-          transition: all 1s linear; }
+          transition: all .4s linear; }
         header nav ul a:hover::before {
           width: 100%; }
         header nav ul a:hover {
@@ -171,7 +171,7 @@ main {
     float: left;
     justify-content: space-between;
     padding: 2rem 0; }
-    main div.container div.section1 {
+    main div.container section.s1 {
       float: left;
       width: 31.1%;
       padding: 1rem;
@@ -179,9 +179,11 @@ main {
       border-radius: .5rem;
       background-color: #f7f7f7;
       text-align: justify; }
-      main div.container div.section1:hover {
+      main div.container section.s1 h3 {
+        text-align: center; }
+      main div.container section.s1:hover {
         box-shadow: 0 0 10px #864949; }
-    main div.container div.section2 {
+    main div.container section.s2 {
       float: left;
       width: 48%;
       margin: 1%;
@@ -189,20 +191,24 @@ main {
       border-radius: .5rem;
       background-color: #f7f7f7;
       text-align: justify; }
-      main div.container div.section2:hover {
+      main div.container section.s2 h3 {
+        text-align: center; }
+      main div.container section.s2:hover {
         box-shadow: 0 0 10px #864949; }
-    main div.container div.section3 {
+    main div.container section.s3 {
       width: 100%;
       padding: 1rem;
       border-radius: 1rem;
-      background-color: #f7f7f7;
       text-align: justify; }
-      main div.container div.section3:hover {
-        box-shadow: 0 0 10px #864949; }
     main div.container:nth-child(1) {
       border-bottom: #864949 dotted; }
     main div.container:nth-child(2) {
       border-bottom: #864949 dotted; }
+
+i {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%); }
 
 h3 {
   margin: 1rem 0;
